@@ -22,6 +22,7 @@ No backend, no libraries — fully front-end and super easy to use or integrate 
 
 
 WORKING
+
 JavaScript randomly generates a combination of characters (A–Z, a–z, 0–9).
 
 The CAPTCHA is displayed inside a styled container.
