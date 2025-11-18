@@ -30,3 +30,15 @@ submit.onclick = function chekckInput(){
     }
 
 }
+refresh.onclick = function refreshCaptcha(){
+
+    let newCaptcha = "";
+
+
+
+
+
+
+
+
+
