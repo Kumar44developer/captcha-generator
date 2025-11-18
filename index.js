@@ -21,3 +21,12 @@ body.onload = function generateCaptcha(){
 }
 submit.onclick = function chekckInput(){
     const input = document.getElementById("_client-text").value;
+    if(input === ""){
+        display.innerText = "Please Enter the text Shown below👇";
+    }else if(input === captcha){
+        display.innerText = "Matched😎";
+    }else{
+        display.innerText = "Not-Matched😖";
+    }
+
+}
