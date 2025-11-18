@@ -19,3 +19,5 @@ body.onload = function generateCaptcha(){
 
 
 }
+submit.onclick = function chekckInput(){
+    const input = document.getElementById("_client-text").value;
