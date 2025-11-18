@@ -14,3 +14,8 @@ body.onload = function generateCaptcha(){
         const randomIndex = Math.floor(Math.random() * char.length);
         captcha += char.substring(randomIndex,randomIndex + 1);
     }
+  document.getElementById("_generator").value = captcha;
+    display.innerText = "Captcha Generator"
+
+
+}
