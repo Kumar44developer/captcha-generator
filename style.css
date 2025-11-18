@@ -49,7 +49,11 @@ button{
     cursor: pointer;
      transition: background-color 0.3s, transform 0.2s;
 }
-   
+
+
+button:hover{
+    transform: scale(1.1);
+}
 
 
 
