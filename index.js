@@ -37,6 +37,8 @@ refresh.onclick = function refreshCaptcha(){
         const randomChar = char[Math.floor(Math.random() * char.length)]
         newCaptcha += randomChar;
     }
+  captcha = newCaptcha;
+    document.getElementById("_generator").value = captcha;
 
 
 
