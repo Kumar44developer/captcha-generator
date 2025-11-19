@@ -33,7 +33,10 @@ submit.onclick = function chekckInput(){
 refresh.onclick = function refreshCaptcha(){
 
     let newCaptcha = "";
-
+        for(let i = 0; i < captcha.length;i++){
+        const randomChar = char[Math.floor(Math.random() * char.length)]
+        newCaptcha += randomChar;
+    }
 
 
 
