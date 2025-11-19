@@ -39,7 +39,10 @@ refresh.onclick = function refreshCaptcha(){
     }
   captcha = newCaptcha;
     document.getElementById("_generator").value = captcha;
+   display.innerText = "Captcha Generator"
 
+
+}
 
 
 
