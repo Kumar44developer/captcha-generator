@@ -1,36 +1,49 @@
-🔐 CAPTCHA Generator (HTML + CSS + JavaScript)
+# CAPTCHA Generator
 
-A simple and lightweight client-side CAPTCHA Generator built entirely using HTML, CSS, and Vanilla JavaScript. This project generates random CAPTCHA strings, displays them in a styled box, and allows the user to validate whether the input matches the generated CAPTCHA.
+A lightweight, fully client-side CAPTCHA generator built with HTML, CSS, and vanilla JavaScript. It produces a random alphanumeric code, lets the user type it back, and validates the input instantly. No backend and no libraries are required.
 
-No backend, no libraries — fully front-end and super easy to use or integrate in any small project or form
+## Overview
 
-🚀 Features
+On page load the app generates a six-character code drawn from digits and upper and lower case letters, and shows it in a read-only field. The user enters the code and submits it for validation, or requests a fresh code with the refresh button.
 
-✔️ Generate a new CAPTCHA with one click
+## Features
 
-✔️ Fully client-side (HTML + CSS + JavaScript only)
+- Random six-character alphanumeric code generated on load
+- Instant validation with clear matched, not matched, and empty-input messages
+- Refresh button to generate a new code at any time
+- Pure front-end implementation with no dependencies
+- Responsive centered layout with an animated gradient background
 
-✔️ Random alphanumeric CAPTCHA
+## Tech Stack
 
-✔️ Refresh / Reload CAPTCHA
+| Technology | Role |
+| --- | --- |
+| HTML5 | Page structure and controls |
+| CSS3 | Layout, styling, and background animation |
+| JavaScript | Code generation and validation logic |
 
-✔️ Input validation: checks if the user typed the correct CAPTCHA
+## Project Structure
 
-✔️ Clean UI with modern styling
+```
+project24/
+├── index.html
+├── style.css
+├── index.js
+└── README.md
+```
 
-✔️ Easily customizable
+## Getting Started
 
+Clone the repository and open `index.html` in any browser. No build step or server is required.
 
-WORKING
+```bash
+git clone https://github.com/Kumar44developer/captcha-generator.git
+```
 
-JavaScript randomly generates a combination of characters (A–Z, a–z, 0–9).
+## How It Works
 
-The CAPTCHA is displayed inside a styled container.
+The character set combines digits and letters. JavaScript picks six random characters to form the code and displays it in the generator field. When the user submits, the entered text is compared against the current code and the status message updates accordingly. The refresh button rebuilds the code on demand.
 
-The user types the CAPTCHA into the input box.
+## Author
 
-On submit:
-
-If correct → shows success message
-
-If wrong → shows error message + reloads new CAPTCHA
+Created by [Kumar44developer](https://github.com/Kumar44developer).
